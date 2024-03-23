@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    /* background-color: aquamarine; */
+    background-color: transparent;
+    display: flex;
+    
+
+}
+.title{
+    width: 80%;
+    height: 80%;
+    font-family: "Darker Grotesque", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight :500;
+    letter-spacing: 15px;
+    align-self: center;
+    /* font-style: normal;  */
+}
+/* --------------------------  Sidebar  -------------------------- */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    width: 10%;
+    height: 10%;
+    transition: margin-left .5s;
+    padding: 16px;
+    
+  }
+  
+/* --------------------------  Sidebar  -------------------------- */
+
+
+
+
+/* ---------------------------First Page --------------------------*/
+
+.first-page{
+    width: 100%;
+    height: 100%;
+    background-color: salmon;
+}
+
+
+/* ---------------------------First Page --------------------------*/
+
+
+
+/* ---------------------------Second Page --------------------------*/
+
+.second-page .title2{
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    /* background-color: bisque; */
+    background-color: transparent;
+    font-family: "Darker Grotesque", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight :400;
+    letter-spacing: 2px;
+    align-self: center;
+    /* font-style: normal;  */
+}
+.second-page .vision{
+    width: 90%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    text-align: center;
+}
+fieldset{
+    width: 85%;
+    padding: 7px;
+    font-size: 30px;
+    font-family: "Alata", sans-serif;
+    border-radius: 14px;
+    
+}
+/* ---------------------------Second Page --------------------------*/
+
