@@ -8,6 +8,8 @@ body{
   overflow-X: hidden;
 }
 
+
+/* --------------------------  Header  -------------------------- */
 .header {
   width: 100vw;
   height: 10vh;
@@ -16,6 +18,7 @@ body{
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
 
   transition-duration: 0.5s;
 }
@@ -94,22 +97,66 @@ body{
 }
 
 
-/* --------------------------  Sidebar End -------------------------- */
-
 
 
 
 /* ---------------------------First Page --------------------------*/
 
 .first-page {
-  width: 100vw;
   height: 100vh;
-  padding-top: 10vh; /*else content will hide behind header*/
+  /* padding-top: 10vh; else content will hide behind header */
+  position: relative;
+
   background-color: salmon;
 }
+.carousel{
+  width: 80%;
+  height: 80%;
+  
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
 
+  background-color: red;
+  border: 5px solid black;
+}
 
-/* ---------------------------First Page End--------------------------*/
+.first-page button{
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+
+  width: 3rem;
+  height: 3rem;
+  padding: 1em;
+  border-radius: 50%;
+}
+
+.slideLeft{
+  left: 9%;
+}
+.slideRight{
+  right: 9%;
+}
+
+.slideImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: absolute;
+  left: 0;
+
+  transition-duration: 1s;
+}
 
 
 /* ---------------------------Second Page --------------------------*/
@@ -153,4 +200,3 @@ fieldset {
   border-radius: 14px;
 }
 
-/* ---------------------------Second Page --------------------------*/

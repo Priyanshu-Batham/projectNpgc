@@ -22,11 +22,11 @@
 </head>
 
 <body>
+    <!---------------header-------------->
     <div class="header" id="myHeader">
         <h1 class="title">NATIONAL PG COLLEGE</h1>
 
         <div id="mySidebar" class="sidebar">
-            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
             <a href="#">Admission</a>
             <a href="#">Online Study Material</a>
             <a href="#">Placements</a>
@@ -35,13 +35,28 @@
 
         <button class="openbtn" onclick="toggleNav()">☰</button>
 
-        </div>
     </div>
+    </div>
+
+
+    <!---------------first page-------------->
     <section class="first-page">
-        <h1>This is where the main slider will be present</h1>
-        <blockquote>I am making other easier components first and then will jump onto it</blockquote>
+        <button class="slideLeft" onclick="slideRight()">&lt;</button>
+
+        <div class="carousel">
+            <img src="assets/1.jpg" class="slideImage">
+            <img src="assets/acad2.jpeg" class="slideImage">
+            <img src="assets/canteen.jpeg" class="slideImage">
+            <img src="assets/fest2.jpeg" class="slideImage">
+            <img src="assets/statue.jpeg" class="slideImage">
+        </div>
+
+        <button class="slideRight" onclick="slideLeft()">&gt;</button>
     </section>
-    
+
+
+
+    <!---------------second page-------------->
     <section class="second-page">
         <h1 class="title2">Vision & Mission</h1>
         <center>
@@ -57,27 +72,33 @@
                         responsible citizens of the world.</p>
 
                 </div>
-                
+
             </fieldset>
         </center>
-        
+
         <center>
             <fieldset>
                 <legend style="text-align: right; margin-right: 27px;">Mission</legend>
                 <div class="vision">
-                    <p>The mission of the college is focused on the overall development of the individuals who can serve their organizations, their society and humanity at large with dedication. The college is, through its academic programmes, determined to provide an environment where the students can flexibly develop their personality and bring out the perfection bestowed upon them by nature. The college ensures that each student acquires in-depth knowledge in his chosen discipline and is transformed into a useful citizen of the world.</p>
+                    <p>The mission of the college is focused on the overall development of the individuals who can serve
+                        their organizations, their society and humanity at large with dedication. The college is,
+                        through its academic programmes, determined to provide an environment where the students can
+                        flexibly develop their personality and bring out the perfection bestowed upon them by nature.
+                        The college ensures that each student acquires in-depth knowledge in his chosen discipline and
+                        is transformed into a useful citizen of the world.</p>
 
                 </div>
-                
+
             </fieldset>
         </center>
     </section>
 
-    
+
 
 
     <!-- Scripts -->
-    <script src="sidebar.js"></script>
+    <script src="script/sidebar.js"></script>
+    <script src="script/carousel.js"></script>
 </body>
 
 </html>
