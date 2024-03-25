@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ------------------navbar--------------- */
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+    height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+}
+
+.navbar .leftNavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    position: relative;
+
+    height: 90%;
+    width: 30%;
+}
+
+.navbar .leftNavBar .logo{
+    height: 90%;
+    width: 20%;
+    margin-left: 2rem;
+
+    background-image: url("../assets/logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar .leftNavBar .search{
+    height: 55%;
+    width: 50%;
+
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding-left: 1em;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.leftNavBar .navBarSearchBtn{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+
+    transform: translateY(-50%);
+
+    font-size: 1.4rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.navbar .rightNavBar{
+    width: 40%;
+    height: 90%;
+
+    display: flex;
+    margin-right: 1%;
+}
+
+.navbar .rightNavBar .navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 70%;
+}
+
+.navbar .rightNavBar .navlinks li{
+    padding: 0.1em 1.2em;
+    list-style-type: none;
+
+    cursor: pointer;
+}
+
+.navbar .rightNavBar .loginReg{
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rightNavBar .loginReg button{
+    padding: 0.5em 1.5em;
+
+    border-radius: 4px;
+    border-style: none;
+    font-size: 1rem;
+    background-color: #5a4e8c;
+    color: white;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/* -------------------FIRST PAGE----------------- */
+.firstPage{
+    margin-top: 10vh;
+
+    width: 100%;
+    height: 75vh;
+
+    display: flex
+}
+
+
+.firstPage .leftFirst{
+    width: 50%;
+    height: 100%;
+
+    background-color: #5a4e8c;
+    position: relative;
+}
+.leftFirst .firstPageHeading{
+    font-size: 2.8rem;
+    font-weight: 800;
+    /* background-color: yellow; */
+    color: white;
+    word-spacing: 0.5rem;
+
+    margin-top: 20%;
+    margin-left: 30%;
+    width: 50%;
+}
+
+.leftFirst .firstPagePara{
+    font-size: 1.5rem;
+
+    color: white;
+
+    width: 52%;
+    margin-top: 3%;
+    margin-left: 30%;
+}
+
+.leftFirst .FirstPageSearch{
+    position: absolute;
+    top: 63.5%;
+    right: 0;
+
+    font-size: 1.2rem;
+
+    padding: 1em 2em;
+    width: 70%;
+    height: 10%;
+}
+
+
+.firstPage .rightFirst{
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+
+    background-image: url(../assets/collegeBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 20%;
+}
+
+.rightFirst .rightSearchBtn{
+    position: absolute;
+    top: 63.5%;
+
+    font-size: 1.4rem;
+    background-color: rgb(222, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    padding: 0.8em;
+}
