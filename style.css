@@ -100,6 +100,7 @@ body{
 
 
 
+
 /* ---------------------------First Page --------------------------*/
 
 .first-page {
@@ -158,31 +159,30 @@ body{
   transition-duration: 1s;
 }
 
-
 /* ---------------------------Second Page --------------------------*/
 .second-page{
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
+  
 
 .second-page .title2 {
-  width: 100%;
-  height: 20%;
-  padding-top: 1rem;
-
-  font-size: 50px;
-  background-color: bisque;
-  /* background-color: transparent;  */
-  font-size: 6rem;
-  font-family: "Darker Grotesque", sans-serif;
-  text-align: center;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  letter-spacing: 2px;
-  align-self: center;
-  /* font-style: normal;  */
-}
-
+    width: 100%;
+    height: 20%;
+    padding-top: 1rem;
+  
+    font-size: 50px;
+    background-color: bisque;
+    /* background-color: transparent;  */
+    font-size: 6rem;
+    font-family: "Darker Grotesque", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    letter-spacing: 2px;
+    align-self: center;
+    /* font-style: normal;  */
+  }
 .second-page .vision {
   width: 90%;
   font-size: 20px;
@@ -190,13 +190,206 @@ body{
   background-color: transparent;
   text-align: center;
 }
+fieldset{
+    width: 85%;
+    padding: 7px;
+    font-size: 30px;
+    font-family: "Alata", sans-serif;
+    border-radius: 14px;
+    
+}
+/* ---------------------------Second Page --------------------------*/
 
-fieldset {
+
+
+/* ---------------------------Third Page --------------------------*/
+
+
+ .title2{
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    /* background-color: bisque; */
+    background-color: transparent;
+    font-family: "Darker Grotesque", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight :400;
+    letter-spacing: 2px;
+    align-self: center;
+    /* font-style: normal;  */
+}
+
+
+ 
+.wrapper { 
+  max-width: 1100px; 
+  width: 100%; 
+  position: relative; 
+
+  /* background-color: salmon; */
+  background-color: transparent;
+} 
+
+.wrapper i { 
+  height: 50px; 
+  width: 50px; 
+  color : white;
+  /* background: rgb(118, 233, 118);  button for left & right */  
+  background: #265DF2; 
+  text-align: center; 
+  line-height: 50px; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  position: absolute; 
+  top: 50%; 
+  font-size: 1.25 rem; 
+  transform: translateY(-50%); 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23); 
+
+} 
+
+.wrapper i:first-child { 
+  left: -22px; 
+
+} 
+
+.wrapper i:last-child { 
+  right: -22px; 
+
+} 
+
+.wrapper .feature-carousel { 
+  display: grid; 
+  grid-auto-flow: column; 
+  grid-auto-columns: calc((100% / 3) - 12px); 
+  gap: 16px; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth; 
+  scrollbar-width: 0; 
+} 
+
+.feature-carousel::-webkit-scrollbar { 
+  display: none; 
+} 
+
+.feature-carousel :where(.card, .img) { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+} 
+
+.feature-carousel .dragging { 
+  scroll-snap-type: none; 
+  scroll-behavior: auto; 
+} 
+
+.feature-carousel .no-transition { 
+  scroll-behavior: auto; 
+} 
+
+.feature-carousel.dragging .card { 
+  cursor: grab; 
+  user-select: none; 
+} 
+
+.feature-carousel .card { 
+  scroll-snap-align: start; 
+  height: 340px; 
+  list-style: none; 
+  background: #fff; 
+  border-radius: 8px; 
+  display: flex; 
+  cursor: pointer; 
+  width: 98%; 
+  padding-bottom: 15px; 
+  align-items: center; 
+  justify-content: center; 
+  flex-direction: column; 
+  
+  /* color: #265DF2; */
+  border: 2px solid #265DF2;
+  font-family: 'Darker Grotesque';
+  font-weight: 600;
+} 
+
+.card .img { 
+  background: green; 
+  width: 145px; 
+  height: 145px; 
+  border-radius: 50%; 
+
+} 
+
+.card .img img { 
+  width: 190px; 
+  height: 190px; 
+  object-fit: cover; 
+  border-radius: 50%; 
+  border: 4px solid #fff; 
+} 
+
+.card h2 { 
+  font-weight: 500; 
+  font-size: 1.56rem; 
+  margin: 30px 0 5px; 
+} 
+
+.card span { 
+  color: #6a6d78; 
+  font-size: 1.31rem; 
+
+} 
+
+@media screen and (max-width: 900px) { 
+  .wrapper .carousel { 
+      grid-auto-columns: calc((100% / 2) - 9px); 
+
+  } 
+} 
+
+@media screen and (max-width: 600px) { 
+  .wrapper .carousel { 
+      grid-auto-columns: 100%; 
+
+  } 
+}
+
+
+/* ---------------------------Third Page --------------------------*/
+
+
+
+
+/* ---------------------------Fourth Page --------------------------*/
+
+.fourth-page .message{
+  width: 100%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  
+}
+.fourth-page fieldset{
   width: 85%;
-  padding: 7px;
-
+  
   font-size: 30px;
   font-family: "Alata", sans-serif;
   border-radius: 14px;
+  text-align: center;
+  padding: 2px 40px;
+}
+.fourth-page legend img{
+  width: 240px;   /* x(7) * 4 times */
+  height: 240px;  /* x(7) * 3 times  */
+  background-size: contain;
+  border-radius: 50%;
+  border: 3px solid black;
+  transition: 0.7s;
+
+}
+.fourth-page legend img:hover{
+    border-color: #265DF2;
 }
 
