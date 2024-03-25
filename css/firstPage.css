@@ -170,6 +170,7 @@
 
 .firstPage .rightFirst{
     position: relative;
+    overflow: hidden;
 
     width: 50%;
     height: 100%;
@@ -178,6 +179,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 20%;
+}
+
+.rightFirst .firstPageImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition-duration: 0.5s;
+
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
 }
 
 .rightFirst .rightSearchBtn{
@@ -189,6 +203,8 @@
     color: white;
     border: none;
     cursor: pointer;
+
+    z-index: 2;
 
     padding: 0.8em;
 }
