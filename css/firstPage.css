@@ -22,6 +22,7 @@
     justify-content: space-between;
 
     background-color: white;
+    box-shadow: 0 0 20px 1px black;
 }
 
 .navbar .leftNavBar{
