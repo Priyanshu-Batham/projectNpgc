@@ -13,43 +13,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-    <!----------------- fonts ----------------------->
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/> 
-    </head> 
+    
+    <!----------------- Personal StyleSheet ----------------------->
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Scripts -->
-    <script src="sidebar.js"></script>
-    <!-- Scripts -->
-    <title>SRJ Branch</title>
+    <!-------------------Personal Scripts------------------->
+    <!-- used defer attribute so that javascript waits for document to load first and also we won't have to 
+    write the script tags at the bottom of the body-->
+    <script src="sidebar.js" defer></script>
+    <script src="card.js" defer></script>
+    <script src="carousel.js" defer></script>
+    <script src="script/sidebar.js" defer></script>
+    <script src="script/carousel.js" defer></script>
+
+    <title>NPGC</title>
 </head>
 
 <body>
-    <div class="header">
+    <!---------------header-------------->
+    <div class="header" id="myHeader">
+        <h1 class="title">NATIONAL PG COLLEGE</h1>
 
         <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="#">Admission</a>
             <a href="#">Online Study Material</a>
             <a href="#">Placements</a>
             <a href="#">Result</a>
         </div>
 
-        <div id="main">
-            <button class="openbtn" onclick="openNav()">☰</button>
+        <button class="openbtn" onclick="toggleNav()">☰</button>
 
-        </div>
-        <h1 class="title">NATIONAL PG COLLEGE</h1>
+    </div>
     </div>
 
-        <!-- ? ------------------------------------------------------------------------- -->
 
+    <!---------------first page-------------->
     <section class="first-page">
-        <!-- <h1>This is where the main slider will be present</h1>
-        <blockquote>I am making other easier components first and then will jump onto it</blockquote> -->
-
-        <button class="slideLeft fa-solid  fas fa-angle-left" onclick="slideRight()"></button>
-         <!-- <i id="left" class="fa-solid  fas fa-angle-left"></i>  -->
+        <button class="slideLeft" onclick="slideRight()">&lt;</button>
 
         <div class="carousel">
             <img src="assets/acad_block.jpeg" class="slideImage">
@@ -59,14 +60,12 @@
             <img src="assets/statue.jpeg" class="slideImage">
         </div>
 
-        <button class="slideRight fa-solid  fas fa-angle-right" onclick="slideLeft()"></button>
-
-
+        <button class="slideRight" onclick="slideLeft()">&gt;</button>
     </section>
-    <br><br>
 
-    <!-- ? ------------------------------------------------------------------------- -->
 
+
+    <!---------------second page-------------->
     <section class="second-page">
         <h1 class="title2">Vision & Mission</h1>
         <center>
@@ -79,13 +78,13 @@
                         ethics are the two pillars upon which the foundation of the academic programmes of the College
                         rests.The college is committed to instill in the students a deep sense of ethics, which having
                         amalgamated with their inner talents transforming them into ideal, dedicated, sincere and
-                        responsible citizens of the world.</p>
-
+                        responsible citizens of the world.
+                    </p>
                 </div>
-                
+
             </fieldset>
         </center>
-        <br>
+
         <center>
             <fieldset>
                 <legend style="text-align: right; margin-right: 27px;">Mission</legend>
@@ -97,7 +96,6 @@
             </fieldset>
         </center>
     </section>
-    <br><br><br>
 
     <!-- ? ------------------------------------------------------------------------- -->
     <section class="third-page">
@@ -172,6 +170,5 @@
 
     <!-- ? ------------------------------------------------------------------------- -->
 </body>
-<script src="card.js"></script>z
-<script src="carousel.js"></script>z
+
 </html>
