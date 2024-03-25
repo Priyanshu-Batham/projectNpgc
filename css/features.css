@@ -40,15 +40,16 @@
     position: relative;
     overflow: hidden;
 
-
     background-color: blue;
 }
 
 .featureCarousel .featureCard{
     height: 100%;
-    width: calc(100% / 3);
+    width: auto;
     position: absolute;
     left: 0;
+
+    transition-duration: 0.5s;
 
     background-image: url(../assets/collegeBanner.jpg);
     background-position: center;
