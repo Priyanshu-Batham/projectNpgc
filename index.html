@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <!----------------- fonts ----------------------->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/> 
+    </head> 
+
     <!-- Scripts -->
     <script src="sidebar.js"></script>
     <!-- Scripts -->
@@ -38,18 +41,39 @@
         </div>
         <h1 class="title">NATIONAL PG COLLEGE</h1>
     </div>
+
+        <!-- ? ------------------------------------------------------------------------- -->
+
     <section class="first-page">
-        <h1>This is where the main slider will be present</h1>
-        <blockquote>I am making other easier components first and then will jump onto it</blockquote>
+        <!-- <h1>This is where the main slider will be present</h1>
+        <blockquote>I am making other easier components first and then will jump onto it</blockquote> -->
+
+        <button class="slideLeft fa-solid  fas fa-angle-left" onclick="slideRight()"></button>
+         <!-- <i id="left" class="fa-solid  fas fa-angle-left"></i>  -->
+
+        <div class="carousel">
+            <img src="assets/acad_block.jpeg" class="slideImage">
+            <img src="assets/acad2.jpeg" class="slideImage">
+            <img src="assets/canteen.jpeg" class="slideImage">
+            <img src="assets/fest2.jpeg" class="slideImage">
+            <img src="assets/statue.jpeg" class="slideImage">
+        </div>
+
+        <button class="slideRight fa-solid  fas fa-angle-right" onclick="slideLeft()"></button>
+
+
     </section>
     <br><br>
+
+    <!-- ? ------------------------------------------------------------------------- -->
+
     <section class="second-page">
         <h1 class="title2">Vision & Mission</h1>
         <center>
             <fieldset>
                 <legend style="margin-left: 27px;">Vision</legend>
                 <div class="vision">
-                    <p>The motto of the college is maritum ethicus i.e. merit with ethics. Social, regional,
+                    <p>The motto of the college is meritum ethicus i.e. merit with ethics. Social, regional,
                         territorial, geographical, racial and cultural boundaries no longer hold relevance in the
                         present scenario. Merit in human beings without ethics turn him into a wild beast. Merit and
                         ethics are the two pillars upon which the foundation of the academic programmes of the College
@@ -73,7 +97,81 @@
             </fieldset>
         </center>
     </section>
-    <br><br>
-</body>
+    <br><br><br>
 
+    <!-- ? ------------------------------------------------------------------------- -->
+    <section class="third-page">
+        <h1 class="title2">Salient features</h1> <br><br><br>
+        <center>   <div class="wrapper"> 
+            <i id="left" class="fa-solid  fas fa-angle-left"></i> 
+            <ul class="feature-carousel"> 
+                <li class="card"> 
+                    <div class="img"><img src="./assets/naac.jpg" 
+                                          alt="" draggable="false"> </div> 
+                    <h2 style="color: black; font-weight:bold;">NAAC Grage A</h2> 
+                    <span>An Autonomous, CPE & NAAC Certified Grade 'A'</span> 
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src="./assets/adda_pic.png" 
+                                          alt="" draggable="false"> </div> 
+                    <h2 style="color: black; font-weight:bold;">Advanced Courses</h2> 
+                    <span>In-demand courses for the students to make them industry ready.</span> 
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src="./assets/visit1.jpeg" 
+                                          alt="" draggable="false"> </div> 
+                    <h2 style="color: black; font-weight:bold;">Celeb Visits</h2> 
+                    <span>Students gain experience from people belonging to various backgrounds. </span> 
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src="./assets/nep.png" 
+                                          alt="" draggable="false"> </div> 
+                    <h2 style="color: black; font-weight:bold;">Nep Compliant</h2> 
+                    <span>National P.G. College has adopted NEP-2020.</span> 
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src= 
+    "https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" 
+                                          alt="" draggable="false"> </div> 
+                    <h2 style="color: black; font-weight:bold;">GeeksforGeeks</h2> 
+                    <span>Coding Platform</span> 
+                </li> 
+                <li class="card"> 
+                    <div class="img"><img src= 
+    "https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png" 
+                                          alt="" draggable="false"> </div> 
+                    <h2 style="color: black; font-weight:bold;">GeeksforGeeks</h2> 
+                    <span>Coding Platform</span> 
+                </li> 
+            </ul> 
+            <i id="right" class="fa-solid fas fa-angle-right"></i> 
+        </div> </center>
+        
+    </section>
+    <br><br><br><br>
+
+    <!-- ? --------------------------  Departments  ------------------------------ -->
+
+
+
+
+
+    <!-- ? ------------------------------------------------------------------------- -->
+    <section class="fourth-page">
+        <h1 class="title2">Principal's Desk</h1> <br><br>
+        <center>
+            <fieldset>
+                <legend> <img src="./assets/proctor2.png" alt="Dr. Devendra Kumar Singh" draggable="false" title="Dr. Devendra Kumar Singh"></legend>
+                <div class="message">
+                 <center>  <p>The mission of the college is focused on the overall development of the individuals who can serve their organizations, their society and humanity at large with dedication. The college is, through its academic programmes, determined to provide an environment where the students can flexibly develop their personality and bring out the perfection bestowed upon them by nature. The college ensures that each student acquires in-depth knowledge in his chosen discipline and is transformed into a useful citizen of the world.</p></center> 
+                </div>
+            </fieldset>
+        </center>
+    </section>
+    <br><br><br><br>
+
+    <!-- ? ------------------------------------------------------------------------- -->
+</body>
+<script src="card.js"></script>z
+<script src="carousel.js"></script>z
 </html>
