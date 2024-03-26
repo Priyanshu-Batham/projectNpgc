@@ -53,8 +53,6 @@ function slideRight() {
 }
 
 //automating
-setInterval(()=>{
-    rightBtn.click()
-}, 3000)
+setInterval(slideLeft, 3000)
 
 
