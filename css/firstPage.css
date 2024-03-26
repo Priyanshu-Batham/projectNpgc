@@ -45,6 +45,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .navbar .rightNavBar{
@@ -66,8 +67,23 @@
 .navbar .rightNavBar .navlinks li{
     padding: 0.1em 1.2em;
     list-style-type: none;
+    position: relative;
 
     cursor: pointer;
+}
+
+.navlinks li::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 10%;
+    background-color: #5a4e8c;
+    transition-duration: 0.5s;
+}
+.navlinks li:hover::after{
+    width: 100%;
 }
 
 .navbar .rightNavBar .loginReg{
@@ -87,8 +103,12 @@
     background-color: #5a4e8c;
     color: white;
     font-weight: 600;
+    transition-duration: 0.2s;
 
     cursor: pointer;
+}
+.loginReg button:hover{
+    background-color: #342d50;
 }
 
 /* -------------------FIRST PAGE----------------- */
@@ -179,8 +199,12 @@
     color: white;
     border: none;
     cursor: pointer;
+    transition-duration: 0.2s;
 
     z-index: 2;
 
     padding: 0.8em 1em;
+}
+.rightSearchBtn:hover{
+    background-color: rgb(152, 1, 1);
 }
