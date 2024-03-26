@@ -66,6 +66,8 @@
 
 .navbar .rightNavBar .navlinks li{
     padding: 0.1em 0.5vw;
+    font-size: 1vw;
+
     list-style-type: none;
     position: relative;
 
@@ -99,10 +101,10 @@
 
     border-radius: 4px;
     border-style: none;
-    font-size: 1rem;
     background-color: #5a4e8c;
     color: white;
     font-weight: 600;
+    font-size: 1vw;
     transition-duration: 0.2s;
 
     cursor: pointer;
