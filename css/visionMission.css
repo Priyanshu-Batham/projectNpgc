@@ -1,57 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.second-page{
-    width: 100%;
-    height: 80vh;
+.second-page {
+  padding: 200px 0;
+  color: white;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    position: relative;
-    color: white;
+  background-image: url("../assets/visionMission/visionMission.jpg");
+  background-size: cover;
+  background-position: center;
 }
-
-.second-page .visionImage{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  z-index: -1;
-  filter: brightness(60%);
-}
-  
 
 .second-page .title2 {
-    width: 100%;
-    height: 10%;
-  
-    font-size: 3.5vw;
-    font-family: "Darker Grotesque", sans-serif;
-    text-align: center;
-    font-optical-sizing: auto;
-    align-self: center;
-  }
-.second-page .vision {
-  width: 90%;
-  font-size: 1.1vw;
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: transparent; */
+  font-size: 4em;
+  font-family: "Darker Grotesque", sans-serif;
   text-align: center;
 }
-fieldset{
-    width: 85%;
-    padding: 7px;
-    font-size: 30px;
-    font-family: "Alata", sans-serif;
-    border-radius: 14px;
-    
+
+.visionField {
+  width: 85%;
+  margin: 0 auto;
+  padding: 1em 1em;
+  
+  font-family: "Alata", sans-serif;
+  border-radius: 14px;
+}
+
+.visionField .legend{
+  font-size: 2em;
+}
+
+.leftLegend{
+  margin-left: 10%;
+}
+
+.rightLegend{
+  margin-left: 90%;
+}
+
+.second-page .vision {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
 }

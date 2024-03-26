@@ -13,60 +13,43 @@
     position: fixed;
     top: 0;
     z-index: 1000;
-
-    height: 10vh;
-    width: 100vw;
-
+    height: 90px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background-color: white;
     box-shadow: 0 0 20px 1px black;
 }
 
 .navbar .leftNavBar{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    position: relative;
-
     height: 90%;
     width: 30%;
-}
 
-.navbar .leftNavBar .logo{
-    height: 90%;
-    width: 100%;
-    margin-left: 2rem;
+    margin-left: 30px;
 
     background-image: url("../assets/navbar/CollegeLogo.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .navbar .rightNavBar{
-    width: 40vw;
-    height: 90%;
+    height: 90%; 
 
     display: flex;
-    margin-right: 1%;
+    align-items: center;
 }
 
 .navbar .rightNavBar .navlinks{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
-    width: 70%;
 }
 
 .navbar .rightNavBar .navlinks li{
-    padding: 0.1em 0.5vw;
-    font-size: 1vw;
+    padding: 0 1em;
+    font-size: 1.2em;
 
     list-style-type: none;
     position: relative;
@@ -80,7 +63,7 @@
     bottom: 0;
     left: 0;
     width: 0;
-    height: 10%;
+    height: 3px;
     background-color: #5a4e8c;
     transition-duration: 0.5s;
 }
@@ -88,23 +71,17 @@
     width: 100%;
 }
 
-.navbar .rightNavBar .loginReg{
-    flex-grow: 1;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.rightNavBar .loginReg button{
-    padding: 0.5vh 1.2vw;
+.rightNavBar .rightNavBarBtn{
+    padding: 0 1.2em;
+    margin-right: 1rem;
+    height: 50%;
 
     border-radius: 4px;
     border-style: none;
     background-color: #5a4e8c;
     color: white;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1.2em;
     transition-duration: 0.2s;
 
     cursor: pointer;
@@ -115,8 +92,7 @@
 
 /* -------------------FIRST PAGE----------------- */
 .firstPage{
-    margin-top: 10vh;
-
+    margin-top: 90px;
     width: 100%;
     height: 75vh;
 
@@ -132,25 +108,23 @@
     position: relative;
 }
 .leftFirst .firstPageHeading{
-    font-size: 5vh;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+
+    font-size: 3em;
     font-weight: 800;
-    /* background-color: yellow; */
     color: white;
     word-spacing: 0.5rem;
-
-    margin-top: 20vh;
-    margin-left: 30%;
-    width: 50%;
 }
 
 .leftFirst .firstPagePara{
-    font-size: 1.2vw;
+    position: absolute;
+    top: 50%;
+    left: 30%;
 
+    font-size: 1.5em;
     color: white;
-
-    width: 52%;
-    margin-top: 1vh;
-    margin-left: 30%;
 }
 
 .leftFirst .FirstPageSearch{
@@ -158,11 +132,10 @@
     top: 63.5%;
     right: 0;
 
-    font-size: 1.2rem;
+    font-size: 1.2em;
 
     padding: 1em 2em;
     width: 70%;
-    height: 8vh;
 }
 
 
@@ -176,7 +149,6 @@
 
 .rightFirst .firstPageImage{
     position: absolute;
-    top: 0;
     left: 0;
 
     transition-duration: 0.5s;
@@ -190,17 +162,14 @@
 .rightFirst .rightSearchBtn{
     position: absolute;
     top: 63.5%;
+    padding: 0.6em 1.2em;
 
-    width: 8vh;
-    height: 8vh;
-
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     background-color: rgb(222, 0, 0);
     color: white;
     border: none;
     cursor: pointer;
     transition-duration: 0.2s;
-
     z-index: 2;
 }
 .rightSearchBtn:hover{

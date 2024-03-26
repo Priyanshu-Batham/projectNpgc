@@ -8,35 +8,24 @@
 }
 
 .features{
-    height: 70vh;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
+    padding: 65px 0;
     position: relative;
-
-    /* background-color: red; */
 }
 
 .features .featureHeading{
     text-align: center;
-    font-size: 5vh;
-    margin-top: 3.5vh;
+    font-size: 3em;
 }
-
-
 
 .features .featurePara{
     text-align: center;
-    font-size: 2.8vh;
+    font-size: 1.7em;
 }
 
 .features .featureCarousel{
     width: 80%;
-    height: 50%;
-    margin-top: 2%;
+    height: 350px;
+    margin: 2rem auto;
     position: relative;
     overflow: hidden;
 }
@@ -76,23 +65,23 @@
     width: 100%;
     opacity: 0;
 
-    font-size: 1.8vw;
+    font-size: 1.8em;
     color: white;
     text-align: center;
 }
 
 .features button{
-    font-size: 1.2rem;
-    height: 4rem;
-    width: 4rem;
+    position: absolute;
+    top: 54%;
+
+    font-size: 1.2em;
+    padding: 1em 1.4em;
+
     background-color: #5a4e8c;
     color: white;
     cursor: pointer;
     border-radius: 50%;
     border-style: none;
-    position: absolute;
-    top: 38vh;
-    transform: translateY(-50%);
 }
 
 .features .featureLeftBtn{
