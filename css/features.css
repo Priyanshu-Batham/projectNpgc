@@ -17,7 +17,7 @@
     justify-content: start;
     position: relative;
 
-    background-color: red;
+    /* background-color: red; */
 }
 
 .features .featureHeading{
@@ -34,27 +34,47 @@
 }
 
 .features .featureCarousel{
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 50%;
     margin-top: 2%;
     position: relative;
     overflow: hidden;
 
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .featureCarousel .featureCard{
     height: 100%;
-    width: auto;
+    width: 25%;
     position: absolute;
     left: 0;
 
     transition-duration: 0.5s;
 
-    background-image: url(../assets/collegeBanner.jpg);
-    background-position: center;
-    background-size: cover;
-    border: 10px solid red;
+    border: 10px solid white;
+}
+
+.featureCard:hover{
+    transform: scale(120%);
+
+    .featureCardHeading{
+        opacity: 1;
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+}
+
+.featureCard img{
+    object-fit: cover;
+}
+.featureCard .featureCardHeading{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+
+    font-size: 2rem;
+    color: white;
+    text-align: center;
 }
 
 .features button{
@@ -68,15 +88,15 @@
     border-radius: 50%;
     border-style: none;
     position: absolute;
-    top: 60%;
+    top: 58%;
 
     transform: translateY(-50%);
 }
 
 .features .featureLeftBtn{
-    left: 19%;
+    left: 9%;
 }
 
 .features .featureRightBtn{
-    right: 19%;
+    right: 9%;
 }
