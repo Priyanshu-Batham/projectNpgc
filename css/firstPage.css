@@ -38,37 +38,13 @@
 
 .navbar .leftNavBar .logo{
     height: 90%;
-    width: 20%;
+    width: 100%;
     margin-left: 2rem;
 
-    background-image: url("../assets/logo.png");
+    background-image: url("../assets/CollegeLogo.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-}
-
-.navbar .leftNavBar .search{
-    height: 55%;
-    width: 50%;
-
-    border: 2px solid black;
-    border-radius: 1rem;
-    padding-left: 1em;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.leftNavBar .navBarSearchBtn{
-    position: absolute;
-    top: 50%;
-    right: 10%;
-
-    transform: translateY(-50%);
-
-    font-size: 1.4rem;
-    border: none;
-    background-color: white;
-    cursor: pointer;
 }
 
 .navbar .rightNavBar{
@@ -206,5 +182,5 @@
 
     z-index: 2;
 
-    padding: 0.8em;
+    padding: 0.8em 1em;
 }
