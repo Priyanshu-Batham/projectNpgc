@@ -41,7 +41,7 @@
     width: 100%;
     margin-left: 2rem;
 
-    background-image: url("../assets/CollegeLogo.png");
+    background-image: url("../assets/navbar/CollegeLogo.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -170,11 +170,6 @@
 
     width: 50%;
     height: 100%;
-
-    background-image: url(../assets/collegeBanner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 20%;
 }
 
 .rightFirst .firstPageImage{

@@ -16,7 +16,7 @@ for (i = 0; i < n; i++) {
 
 
 function slideLeft() {
-    if (count == (n - 1) - 4) {
+    if (count == n - 4) {
         count = 0
         for (i = 0; i < n; i++) {
             featureCard[i].style.left = `${base * i}%`
