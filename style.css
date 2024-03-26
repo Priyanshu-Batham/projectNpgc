@@ -13,7 +13,8 @@ body{
 .header {
   width: 100vw;
   height: 10vh;
-  background-color: aquamarine;
+  background-color: white;
+  /* background-color: transparent; */
 
   position: fixed;
   top: 0;
@@ -21,6 +22,7 @@ body{
   z-index: 1000;
 
   transition-duration: 0.5s;
+  
 }
 
 .title {
@@ -28,11 +30,11 @@ body{
   height: 100%;
   font-family: "Darker Grotesque", sans-serif;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 700;
   word-spacing: 1rem;
-  /* letter-spacing: 15px; */
+  letter-spacing: 7px;
 
   /* background-color: transparent; */
   /* font-style: normal;  */
@@ -108,7 +110,8 @@ body{
   /* padding-top: 10vh; else content will hide behind header */
   position: relative;
 
-  background-color: salmon;
+  /* background-color: salmon; */
+  background-color: transparent;
 }
 .carousel{
   width: 80%;
@@ -170,11 +173,10 @@ body{
     width: 100%;
     height: 20%;
     padding-top: 1rem;
-  
-    font-size: 50px;
+
     background-color: bisque;
     /* background-color: transparent;  */
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: "Darker Grotesque", sans-serif;
     text-align: center;
     font-optical-sizing: auto;
@@ -198,7 +200,7 @@ fieldset{
     border-radius: 14px;
     
 }
-/* ---------------------------Second Page --------------------------*/
+/* ---------------------------Second Page(end) --------------------------*/
 
 
 
@@ -208,7 +210,7 @@ fieldset{
  .title2{
     width: 100%;
     height: 100%;
-    font-size: 50px;
+    font-size: 5rem;
     /* background-color: bisque; */
     background-color: transparent;
     font-family: "Darker Grotesque", sans-serif;
@@ -357,7 +359,104 @@ fieldset{
 }
 
 
-/* ---------------------------Third Page --------------------------*/
+/* ---------------------------Third Page(end) --------------------------*/
+
+
+
+
+
+/* ---------------------------Dept Page --------------------------*/
+/* CSS for the image boxes */
+.dept-page {
+  width: 100%;
+  height: fit-content;
+}
+
+.dept-page .title2 {
+  width: 100%;
+  height: 20%;
+  padding-top: 1rem;
+  background-color: bisque;
+  font-size: 5rem;
+  font-family: "Darker Grotesque", sans-serif;
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  letter-spacing: 2px;
+  align-self: center;
+}
+
+.dept-row {
+  width: 100%;
+  padding: 20px 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dept-row .imgbox {
+  width: 33%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  margin: 12px;
+}
+
+.dept-row .imgbox img {
+  width: 100%;
+  height: 100%;
+  transition: filter 0.4s ease;
+  background-color: rgba(255, 0, 0, 0.3);        
+  opacity: 1;
+}
+
+
+.dept-row .imgbox::before {
+  content: 'Department';
+  
+  font-size: 34px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  z-index: 10;
+
+  
+}
+
+.dept-row .imgbox::after {
+  content: 'View More';
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  /* color: rgba(90, 78, 140, 0.3); */
+  color: black;
+  padding: 12px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.dept-row .imgbox:hover img {
+  filter: brightness(0.4);
+ 
+}
+
+.dept-row .imgbox:hover::before,
+.dept-row .imgbox:hover::after {
+  opacity: 1;
+}
+
+
+/* ---------------------------Dept Page(end) --------------------------*/
 
 
 
