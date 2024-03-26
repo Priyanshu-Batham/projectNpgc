@@ -22,15 +22,15 @@
 
 .features .featureHeading{
     text-align: center;
-    font-size: 3rem;
-    margin-top: 3.5%;
+    font-size: 5vh;
+    margin-top: 3.5vh;
 }
 
 
 
 .features .featurePara{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.8vh;
 }
 
 .features .featureCarousel{
@@ -88,12 +88,10 @@
     background-color: #5a4e8c;
     color: white;
     cursor: pointer;
-
     border-radius: 50%;
     border-style: none;
     position: absolute;
-    top: 58%;
-
+    top: 38vh;
     transform: translateY(-50%);
 }
 

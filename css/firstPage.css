@@ -49,7 +49,7 @@
 }
 
 .navbar .rightNavBar{
-    width: 40%;
+    width: 40vw;
     height: 90%;
 
     display: flex;
@@ -65,7 +65,7 @@
 }
 
 .navbar .rightNavBar .navlinks li{
-    padding: 0.1em 1.2em;
+    padding: 0.1em 0.5vw;
     list-style-type: none;
     position: relative;
 
@@ -95,7 +95,7 @@
 }
 
 .rightNavBar .loginReg button{
-    padding: 0.5em 1.5em;
+    padding: 0.5vh 1.2vw;
 
     border-radius: 4px;
     border-style: none;
@@ -130,24 +130,24 @@
     position: relative;
 }
 .leftFirst .firstPageHeading{
-    font-size: 2.8rem;
+    font-size: 5vh;
     font-weight: 800;
     /* background-color: yellow; */
     color: white;
     word-spacing: 0.5rem;
 
-    margin-top: 20%;
+    margin-top: 20vh;
     margin-left: 30%;
     width: 50%;
 }
 
 .leftFirst .firstPagePara{
-    font-size: 1.5rem;
+    font-size: 1.2vw;
 
     color: white;
 
     width: 52%;
-    margin-top: 3%;
+    margin-top: 1vh;
     margin-left: 30%;
 }
 
@@ -160,7 +160,7 @@
 
     padding: 1em 2em;
     width: 70%;
-    height: 10%;
+    height: 8vh;
 }
 
 
@@ -189,6 +189,9 @@
     position: absolute;
     top: 63.5%;
 
+    width: 8vh;
+    height: 8vh;
+
     font-size: 1.4rem;
     background-color: rgb(222, 0, 0);
     color: white;
@@ -197,8 +200,6 @@
     transition-duration: 0.2s;
 
     z-index: 2;
-
-    padding: 0.8em 1em;
 }
 .rightSearchBtn:hover{
     background-color: rgb(152, 1, 1);
