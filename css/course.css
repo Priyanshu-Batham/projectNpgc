@@ -8,14 +8,13 @@
 }
 
 .course{
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .courseHeading{
     text-align: center;
-    font-size: 3.5em;
+    font-size: 6.5vh;
     font-weight: 700;
-    /* word-spacing: 0.5em; */
 }
 
 .courseGrid{
@@ -25,7 +24,7 @@
     gap: 1em;
 
     width: 80%;
-    height: 500px;
+    height: 50vh;
     margin: 50px auto;
 }
 
@@ -58,7 +57,7 @@
 }
 
 .courseCard .courseCardName{
-    font-size: 2.5em;
+    font-size: 4.5vh;
     text-align: center;
     margin-top: 25%;
     color: white;
@@ -71,7 +70,7 @@
     margin: 0 auto;
     opacity: 0;
 
-    font-size: 1.2em;
+    font-size: 2.5vh;
     font-weight: 600;
     padding: 0.3em 0.6em;
     color: white;

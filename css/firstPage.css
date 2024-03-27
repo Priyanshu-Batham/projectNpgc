@@ -13,7 +13,7 @@
     position: fixed;
     top: 0;
     z-index: 1000;
-    height: 90px;
+    height: 10vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@
 
 .navbar .rightNavBar .navlinks li{
     padding: 0 1em;
-    font-size: 1.2em;
+    font-size: 2vh;
 
     list-style-type: none;
     position: relative;
@@ -81,7 +81,7 @@
     background-color: #5a4e8c;
     color: white;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 2vh;
     transition-duration: 0.2s;
 
     cursor: pointer;
@@ -92,7 +92,7 @@
 
 /* -------------------FIRST PAGE----------------- */
 .firstPage{
-    margin-top: 90px;
+    margin-top: 10vh;
     width: 100%;
     height: 75vh;
 
@@ -112,7 +112,7 @@
     top: 25%;
     left: 30%;
 
-    font-size: 3em;
+    font-size: 5vh;
     font-weight: 800;
     color: white;
     word-spacing: 0.5rem;
@@ -123,7 +123,7 @@
     top: 50%;
     left: 30%;
 
-    font-size: 1.5em;
+    font-size: 2.5vh;
     color: white;
 }
 
@@ -132,7 +132,7 @@
     top: 63.5%;
     right: 0;
 
-    font-size: 1.2em;
+    font-size: 2vh;
 
     padding: 1em 2em;
     width: 70%;
@@ -164,7 +164,7 @@
     top: 63.5%;
     padding: 0.6em 1.2em;
 
-    font-size: 1.6rem;
+    font-size: 2.7vh;
     background-color: rgb(222, 0, 0);
     color: white;
     border: none;

@@ -14,12 +14,12 @@
 
 .features .featureHeading{
     text-align: center;
-    font-size: 3em;
+    font-size: 6vh;
 }
 
 .features .featurePara{
     text-align: center;
-    font-size: 1.7em;
+    font-size: 3vh;
 }
 
 .features .featureCarousel{
@@ -65,7 +65,7 @@
     width: 100%;
     opacity: 0;
 
-    font-size: 1.8em;
+    font-size: 3vh;
     color: white;
     text-align: center;
 }
@@ -74,7 +74,7 @@
     position: absolute;
     top: 54%;
 
-    font-size: 1.2em;
+    font-size: 2vh;
     padding: 1em 1.4em;
 
     background-color: #5a4e8c;
