@@ -81,3 +81,30 @@
     border-style: none;
     cursor: pointer;
 }
+
+@media screen and (max-width: 440px){
+    .course{
+        padding: 50px 0;
+    }
+    .courseHeading{
+        font-size: 2rem;
+    }
+    .courseGrid{
+        /* display: grid; */
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-columns: 1fr;
+        gap: 1em;
+    
+        width: 80%;
+        height: auto;
+        margin: 50px auto;
+    }
+    .courseCard{
+        position: relative;
+        width: 100%;
+        height: 150px;
+    }
+    .courseCard .courseCardName{
+        margin-top: 22%;
+    }
+}

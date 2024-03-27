@@ -23,6 +23,7 @@
     <!-- personal script -->
     <script src="javascript/firstPageImage.js" defer></script>
     <script src="javascript/featureCarousel.js" defer></script>
+    <script src="javascript/toggleNavbar.js" defer></script>
 
 </head>
 
@@ -30,8 +31,10 @@
     <!-- ----------------NAVBAR----------------->
     <div class="navbar">
         <div class="leftNavBar"></div>
+        <button class="navOpenBtn" onclick="openNav()">O</button>
 
         <div class="rightNavBar">
+            <button class="navCloseBtn" onclick="closeNav()">X</button>
             <ul class="navlinks">
                 <li>HOME</li>
                 <li>ABOUT</li>

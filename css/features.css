@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-.features{
+.features {
     padding: 65px 0;
     position: relative;
 }
 
-.features .featureHeading{
+.features .featureHeading {
     text-align: center;
     font-size: 6vh;
 }
 
-.features .featurePara{
+.features .featurePara {
     text-align: center;
     font-size: 3vh;
 }
 
-.features .featureCarousel{
+.features .featureCarousel {
     width: 80%;
     height: 30vh;
     margin: 2rem auto;
@@ -30,7 +30,7 @@
     overflow: hidden;
 }
 
-.featureCarousel .featureCard{
+.featureCarousel .featureCard {
     height: 100%;
     width: 25%;
     position: absolute;
@@ -41,26 +41,27 @@
     border: 10px solid white;
 }
 
-.featureCard:hover{
+.featureCard:hover {
     transform: scale(120%);
 
-    .featureCardHeading{
+    .featureCardHeading {
         opacity: 1;
         bottom: 50%;
         transform: translateY(50%);
     }
 
-    .featureCardImage{
-       filter: brightness(50%);
+    .featureCardImage {
+        filter: brightness(50%);
     }
 }
 
-.featureCard img{
+.featureCard img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.featureCard .featureCardHeading{
+
+.featureCard .featureCardHeading {
     position: absolute;
     width: 100%;
     opacity: 0;
@@ -70,7 +71,7 @@
     text-align: center;
 }
 
-.features button{
+.features button {
     position: absolute;
     top: 54%;
 
@@ -84,10 +85,47 @@
     border-style: none;
 }
 
-.features .featureLeftBtn{
+.features .featureLeftBtn {
     left: 9%;
 }
 
-.features .featureRightBtn{
+.features .featureRightBtn {
     right: 9%;
+}
+
+@media screen and (max-width: 440px) {
+    .features .featureHeading {
+        font-size: 2rem;
+    }
+
+    .features .featurePara {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    .featureCarousel .featureCard {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        border: none;
+    }
+    .features button {
+        /* position: absolute; */
+        top: 56%;
+    
+        font-size: 0.7rem;
+        padding: 1em 1.4em;
+    
+        background-color: #5a4e8c;
+        color: white;
+        cursor: pointer;
+        border-radius: 50%;
+        border-style: none;
+    }
+    .features .featureLeftBtn {
+        left: 7%;
+    }
+    
+    .features .featureRightBtn {
+        right: 7%;
+    }
 }
