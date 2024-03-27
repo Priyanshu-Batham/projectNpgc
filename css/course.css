@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.course{
+    padding: 60px 0;
+}
+
+.courseHeading{
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 700;
+    /* word-spacing: 0.5em; */
+}
+
+.courseGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+}
+
+.courseCard{
+    position: relative;
+}
+
+.courseCard:hover{
+    .courseCardName{
+        margin-top: 15%;
+    }
+    .courseCardBtn{
+        opacity: 1;
+    }
+    
+    img{
+        transform: scale(110%);
+    }
+}
+
+.courseCard img{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+
+    transition-duration: 0.3s;
+}
+
+.courseCard .courseCardName{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 25%;
+    color: white;
+
+    transition-duration: 0.3s;
+}
+
+.courseCard .courseCardBtn{
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 0.3em 0.6em;
+    color: white;
+    background-color: orange;
+    transition-duration: 0.3s;
+
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}
