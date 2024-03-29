@@ -35,7 +35,8 @@
     width: 25%;
     position: absolute;
     left: 0;
-
+    
+    will-change: auto;  /* for performance */
     transition-duration: 0.5s;
 
     border: 10px solid white;

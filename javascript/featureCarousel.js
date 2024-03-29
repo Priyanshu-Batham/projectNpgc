@@ -23,21 +23,19 @@ function slideLeft() {
     if (count == n - 4 && isMobile==false) {
         count = 0
         for (i = 0; i < n; i++) {
-            featureCard[i].style.left = `${base * i}%`
+            featureCard[i].style.transform = `translateX(0%)`
         }
     }
     if (count == n - 1 && isMobile) {
         count = 0
         for (i = 0; i < n; i++) {
-            featureCard[i].style.left = `${base * i}%`
+            featureCard[i].style.transform = `translateX(0%)`
         }
     }
     else {
         count++
         for (i = 0; i < n; i++) {
-            let val = Number.parseInt(featureCard[i].style.left)
-            val -= base
-            featureCard[i].style.left = `${val}%`
+            featureCard[i].style.transform = `translateX(${-100*count}%)`
         }
     }
 }
@@ -45,26 +43,22 @@ function slideLeft() {
 function slideRight() {
     if (count == 0 && isMobile==false) {
         count = (n - 1) - 4
-        let tempBase = 75
-        for (i = n-1; i >= 0; i--) {
-            featureCard[i].style.left = `${tempBase}%`
-            tempBase -= 25
+        for (i = 0; i < n; i++) {
+            featureCard[i].style.transform = `translateX(${-100*count}%)`
         }
     }
     else if (count == 0 && isMobile){
         count = n-1
         let tempBase = 0
-        for (i = n-1; i >= 0; i--) {
-            featureCard[i].style.left = `${tempBase}%`
-            tempBase -= 100
+        count = 0
+        for (i = 0; i < n; i++) {
+            featureCard[i].style.transform = `translateX(0%)`
         }
     }
     else {
         count--
         for (i = 0; i < n; i++) {
-            let val = Number.parseInt(featureCard[i].style.left)
-            val += base
-            featureCard[i].style.left = `${val}%`
+            featureCard[i].style.transform = `translateX(${-100*count}%)`
         }
     }
 }

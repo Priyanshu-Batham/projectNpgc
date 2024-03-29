@@ -34,10 +34,11 @@
 
 .courseCard:hover{
     .courseCardName{
-        margin-top: 15%;
+        transform: translateY(-100%);
     }
     .courseCardBtn{
         opacity: 1;
+        transform: translateY(-100%);
     }
     
     img{
@@ -90,8 +91,6 @@
         font-size: 2rem;
     }
     .courseGrid{
-        /* display: grid; */
-        /* grid-template-rows: 1fr 1fr; */
         grid-template-columns: 1fr;
         gap: 1em;
     
