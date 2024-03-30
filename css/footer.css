@@ -32,6 +32,11 @@ footer{
 .endoftheline{
     font-size: 3vh;
     text-align: center;
+    
+}
+.endoftheline a{
+    color: inherit;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 440px){
