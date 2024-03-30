@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*navbar css was fetched from firstPage.css only*/
+
+/* ----------------Header--------------- */
+.contactUsHeader{
+    margin-top: 10vh;
+    background-color: #5a4e8c;
+    color: white;
+    padding: 6em 15em;
+}
+
+.contactUsHeading{
+    font-size: 4vh;
+}
+
+.contactUsHeader button{
+    border-style: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.contactUsHeader span{
+    font-size: 2vh;
+}
+
+/* ---------------Contact US Banner-------------- */
+.contactUsBanner{
+    width: 60vw;
+    height: 20vw; /*height as vw? yeah some dev shit*/
+    margin: 5vw auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* ---------------Information-------------- */
+.contactWrapper{
+    width: 60vw;
+    margin: 0 auto 5vh;
+}
+
+.getInTouch{
+    padding: 10px 0;
+}
+
+.information{
+    display: flex;
+}
+
+.contactForm textarea{    
+    display: block;
+    padding: 1em;
+    margin-bottom: 20px;
+    height: 25vh;
+    width: 50vw;
+    font-size: 1.5vh;
+}
+
+.contactForm .contactText, .contactEmail{
+    width: 48%;
+    font-size: 1.5vh;
+    margin-bottom: 20px;
+    padding: 1em;
+}
+
+.contactForm .contactEmail{
+    float: right;
+}
+
+.contactForm .contactNumber{
+    display: block;
+    width: 100%;
+    font-size: 1.5vh;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+
+.contactBtn{
+    padding: 1em 3em;
+    font-size: 1.5vh;
+    border: 1px solid orangered;
+    color: orangered;
+    background-color: white;
+
+    transition-duration: 0.5s;
+}
+.contactBtn:hover{
+    background-color: orangered;
+    color: white;
+}
+
+
+/* -----------right side of contact--------- */
+.contactLinks{
+    padding-left: 10px;
+}
+
+.contactRow{
+    display: flex;
+    margin-bottom: 1.2em;
+}
+
+.contactRow i{
+    font-size: 2.5vh;
+}
+
+.contactRow h2{
+    font-size: 1.3vh;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 440px){
+    .contactUsHeader{
+        padding: 2em;
+    }
+    .contactUsBanner{
+        width: 100vw;
+        height: 20vh;
+        margin: 0;
+        object-fit: cover;
+        display: block;
+    }
+    .contactWrapper{
+        width: auto;
+        margin: 0 auto 5vh;
+        padding: 0 10px;
+    }
+    .information{
+        display: block;
+    }
+    .contactForm textarea{
+        margin-top: 2px;
+        width: 90vw;
+    }
+
+
+    .contactLinks{
+        margin-top: 30px;
+    }
+    .contactRow i{
+        font-size: 15px;
+    }
+    .lilInfo h2{
+        font-size: 15px;
+    }
+}
