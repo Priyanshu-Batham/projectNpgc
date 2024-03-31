@@ -1,0 +1,12 @@
+Email JS Service ID : service_6fmt3ea
+Email JS Template ID : template_hhkrvcd
+
+Colors used :
+#5a4e8c
+White
+
+Favicon :
+D:\Srajan\projectNpgc\assets\Complaint\icon
+
+Todo : 
+-> Set the <li> to <a> in Footer

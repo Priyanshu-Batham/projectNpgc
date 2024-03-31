@@ -29,6 +29,10 @@ footer{
 .foot ul li{
     text-align: center;
 }
+.foot a{
+    color: white;
+    text-decoration: none;
+}
 .endoftheline{
     font-size: 3vh;
     text-align: center;
