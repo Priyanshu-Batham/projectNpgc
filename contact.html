@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href = "./assets/Complaint/icon.jpg">
+    <title>Contact Us</title>
+
+    <!-- personal style -->
+    <link rel="stylesheet" href="css/firstPage.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+    <!-------------external script for icons---------- -->
+    <script src="https://kit.fontawesome.com/a3bcc7cf3a.js" crossorigin="anonymous" defer></script>
+
+
+    <!-- personal script -->
+    <script src="javascript/firstPageImage.js" defer></script>
+    <script src="javascript/toggleNavbar.js" defer></script>
+
+</head>
+
+<body>
+    <!-- ----------------NAVBAR----------------->
+    <div class="navbar">
+        <div class="leftNavBar"></div>
+        <button class="navOpenBtn" onclick="openNav()">O</button>
+
+        <div class="rightNavBar">
+            <button class="navCloseBtn" onclick="closeNav()">X</button>
+            <ul class="navlinks">
+                <li><a href="index.html">HOME</a></li>
+                <li>ABOUT</li>
+                <li>ACADEMICS</li>
+                <li>ADMISSION</li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <button class="rightNavBarBtn">Login</button>
+            <button class="rightNavBarBtn">Register</button>
+
+        </div>
+    </div>
+
+
+    <!--------------------Header----------------->
+    <header class="contactUsHeader">
+        <h1 class="contactUsHeading">Contact US</h1>
+        <button class="homeBtn">Home</button>
+        <span>|</span>
+        <button class="contactUsBtn">Contact US</button>
+    </header>
+
+    <!---------------Contact US Banner-------------->
+    <img src="assets/firstPage/2.webp" class="contactUsBanner">
+
+    <!---------------Information Form-------------->
+    <section class="contactWrapper">
+        <h1 class="getInTouch">Get In Touch</h1>
+        <div class="information">
+            <form class="contactForm">
+                <textarea placeholder="Enter Message"></textarea>
+                <input type="text" class="contactText" placeholder="Enter Your Name">
+                <input type="email" class="contactEmail" placeholder="Email">
+                <input type="number" class="contactNumber" placeholder="Number">
+
+                <input type="submit" value="SEND" class="contactBtn">
+            </form>
+
+
+            <div class="contactLinks">
+                <div class="contactRow">
+                    <i class="fa-solid fa-house"></i>
+                    <div class="lilInfo">
+                        <h2>2, Rana Pratap Marg, Lucknow</h2>
+                        <h2>Uttar Pradesh, India</h2>
+                    </div>
+                </div>
+
+                <div class="contactRow"> <!--to be flexed-->
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="lilInfo">
+                        <h2>+91 7593503827</h2>
+                        <h2>Mon to Sat | 8am to 4pm</h2>
+                    </div>
+                </div>
+
+                <div class="contactRow"> <!--to be flexed-->
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="lilInfo">
+                        <h2>Support @Npgc</h2>
+                        <h2>Send Your Queries Anytime</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------FOOTER-------------------->
+    <footer>
+        <div class="footer">
+            <div class="foot">
+                <h1>Quick Links</h1>
+                <ul style="list-style-type: none">
+                    <li>Result</li>
+                    <li>Academic Calender</li>
+                    <li>Tender Notice</li>
+                    <li>Right To Information</li>
+                    <li>Press Release</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h1>External Links</h1>
+                <ul style="list-style-type: none">
+                    <li>UGC</li>
+                    <li>NAAC</li>
+                    <li>Lucknow University</li>
+                    <li>IGNOU</li>
+                    <li>State Scholarship</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h1>About</h1>
+                <ul style="list-style-type: none">
+                    <li>About Us</li>
+                    <li>Contact</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Condition</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="endoftheline">Made With <span style="color: red;"> &heartsuit;  </span> By 
+            <a href="https://github.com/Priyanshu-Batham" target="_blank">@Priyanshu </a> &
+            <a href="https://github.com/nawabSRJ" target="_blank">@Srajan</a></h1>
+    </footer>
+
+</body>
+
+</html>

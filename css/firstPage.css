@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ------------------navbar--------------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 20px 1px black;
+}
+
+.navbar .leftNavBar {
+    height: 90%;
+    width: 30%;
+
+    margin-left: 30px;
+
+    background-image: url("../assets/navbar/CollegeLogo.webp");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.navbar .rightNavBar {
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar .rightNavBar .navlinks {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .rightNavBar .navlinks li {
+    padding: 0 1em;
+    font-size: 2vh;
+
+    list-style-type: none;
+    position: relative;
+
+    cursor: pointer;
+}
+
+.navlinks li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navlinks li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #5a4e8c;
+    transition-duration: 0.5s;
+}
+
+.navlinks li:hover::after {
+    width: 100%;
+}
+
+.rightNavBar .rightNavBarBtn {
+    padding: 0 1.2em;
+    margin-right: 1rem;
+    height: 50%;
+
+    border-radius: 4px;
+    border-style: none;
+    background-color: #5a4e8c;
+    color: white;
+    font-weight: 600;
+    font-size: 2vh;
+    transition-duration: 0.2s;
+
+    cursor: pointer;
+}
+
+.loginReg button:hover {
+    background-color: #342d50;
+}
+
+/* media queries */
+.navOpenBtn {
+    display: none;
+}
+
+.navCloseBtn {
+    display: none;
+}
+
+@media screen and (max-width: 440px) {
+    .navbar .leftNavBar {
+        height: 100%;
+        width: 70%;
+        margin: 0 20px;
+    }
+
+    .navOpenBtn {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 15x;
+
+
+        font-size: 1rem;
+        padding: 0.5em 1em;
+        border-radius: 20px;
+        background-color: #5a4e8c;
+        color: white;
+        margin-right: 10px;
+        border-style: none;
+    }
+
+    .navbar .rightNavBar {
+        position: absolute;
+        top: 0;
+        right: -80vw;
+
+        display: block;
+        height: 100vh;
+        width: 80%;
+        background-color: black;
+        transition-duration: 0.5s;
+    }
+
+    .navCloseBtn {
+        display: block;
+        font-size: 1rem;
+        padding: 0.5em 1em;
+        border-radius: 20px;
+        background-color: #5a4e8c;
+        color: white;
+        margin: 10px;
+        border-style: none;
+    }
+
+    .navbar .rightNavBar .navlinks {
+        display: block;
+        margin-top: 8vh;
+    }
+
+    .navbar .rightNavBar .navlinks li {
+        padding: 1em 0;
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+    }
+    .navlinks li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .rightNavBar .rightNavBarBtn {
+        display: block;
+        width: 40%;
+        height: 5%;
+        margin: 1em auto;
+        text-align: center;
+    }
+}
+
+/* -------------------FIRST PAGE----------------- */
+.firstPage {
+    margin-top: 10vh;
+    width: 100%;
+    height: 75vh;
+
+    display: flex
+}
+
+
+.firstPage .leftFirst {
+    width: 50%;
+    height: 100%;
+
+    background-color: #5a4e8c;
+    position: relative;
+}
+
+.leftFirst .firstPageHeading {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+
+    font-size: 5vh;
+    font-weight: 800;
+    color: white;
+    word-spacing: 0.5rem;
+}
+
+.leftFirst .firstPagePara {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+
+    font-size: 2.5vh;
+    color: white;
+}
+
+.leftFirst .FirstPageSearch {
+    position: absolute;
+    top: 63.5%;
+    right: 0;
+
+    font-size: 2vh;
+
+    padding: 1em 2em;
+    width: 70%;
+}
+
+
+.firstPage .rightFirst {
+    position: relative;
+    overflow: hidden;
+
+    width: 50%;
+    height: 100%;
+}
+
+.rightFirst .firstPageImage {
+    position: absolute;
+    left: 0;
+
+    transition-duration: 0.5s;
+
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.rightFirst .rightSearchBtn {
+    position: absolute;
+    top: 63.5%;
+    padding: 0.6em 1.2em;
+
+    font-size: 2.7vh;
+    background-color: rgb(222, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    z-index: 2;
+}
+
+.rightSearchBtn:hover {
+    background-color: rgb(152, 1, 1);
+}
+
+@media screen and (max-width: 440px) {
+    .firstPage{
+        display: block;
+    }
+    .firstPage .leftFirst {
+        height: 0;
+        width: 100%;
+    }
+    .leftFirst .firstPageHeading {
+        width: 100%;
+        top: 150px;
+        left: 0;
+        text-align: center;
+        z-index: 5;
+    
+        font-size: 1.7rem;
+    }
+    .leftFirst .firstPagePara {
+        top: 240px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        z-index: 5;
+    
+        font-size: 0.8rem;
+    }
+    .leftFirst .FirstPageSearch {
+        top: 290px;
+        left: 15%;
+        z-index: 5;
+    
+        font-size: 0.8rem;
+    
+        padding: 0.5em 1em;
+        width: 60%;
+    }
+
+    .firstPage .rightFirst{
+        width: 100%;
+    }
+    .rightFirst .rightSearchBtn {
+        top: 290px;
+        right: 15%;
+        font-size: 0.8rem; 
+    }
+    .rightFirst .firstPageImage {
+        filter: brightness(60%);
+    }
+}

@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National P.G. College</title>
 
-    <!----------------- fonts ----------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href = "./assets/Complaint/icon.jpg">
+    
+    <!-- Fonts -->
 
+<<<<<<< HEAD
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
@@ -51,23 +52,135 @@
     <!---------------first page-------------->
     <section class="first-page">
         <button class="slideLeft fas fa-angle-left" onclick="slideRight()"></button>
+=======
+    <!-- personal style -->
+    <link rel="stylesheet" href="css/firstPage.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/visionMission.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/footer.css">
 
-        <div class="carousel">
-            <img src="assets/acad_block.jpeg" class="slideImage">
-            <img src="assets/acad2.jpeg" class="slideImage">
-            <img src="assets/canteen.jpeg" class="slideImage">
-            <img src="assets/fest2.jpeg" class="slideImage">
-            <img src="assets/statue.jpeg" class="slideImage">
+
+    <!-------------external script for icons---------- -->
+    <script src="https://kit.fontawesome.com/a3bcc7cf3a.js" crossorigin="anonymous" defer></script>
+
+
+    <!-- personal script -->
+    <script src="javascript/firstPageImage.js" defer></script>
+    <script src="javascript/featureCarousel.js" defer></script>
+    <script src="javascript/toggleNavbar.js" defer></script>
+
+</head>
+
+<body>
+    <!-- ----------------NAVBAR----------------->
+    <div class="navbar">
+        <div class="leftNavBar"></div>
+        <button class="navOpenBtn" onclick="openNav()">O</button>
+
+        <div class="rightNavBar">
+            <button class="navCloseBtn" onclick="closeNav()">X</button>
+            <ul class="navlinks">
+                <li><a href="index.html">HOME</a></li>
+                <li>ABOUT</li>
+                <li>ACADEMICS</li>
+                <li>ADMISSION</li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <button class="rightNavBarBtn">Login</button>
+            <button class="rightNavBarBtn">Register</button>
+
+        </div>
+    </div>
+
+
+    <!-- ----------------FIRST PAGE----------------->
+    <div class="firstPage">
+        <div class="leftFirst">
+            <h1 class="firstPageHeading">National Post<br>Graduate College</h1>
+
+            <p class="firstPagePara">We Design The Future And Set<br>Trends For Others To Follow</p>
+
+            <input type="text" class="FirstPageSearch" placeholder="what do you want to search?">
+        </div>
+        <div class="rightFirst">
+
+            <img src="assets/firstPage/1.webp" class="firstPageImage">
+            <img src="assets/firstPage/2.webp" class="firstPageImage">
+            <img src="assets/firstPage/3.webp" class="firstPageImage">
+            <img src="assets/firstPage/4.webp" class="firstPageImage">
+
+            <button class="rightSearchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- ----------------FEATURE SECTION----------------->
+    <section class="features">
+        <h1 class="featureHeading">Salient Features</h1>
+        <p class="featurePara">Facilities Provided By The Top College Of the The State</p>
+
+        <div class="featureCarousel">
+
+            <div class="featureCard">
+                <img src="assets/features/sports.webp" class="featureCardImage">
+                <h1 class="featureCardHeading">Sports</h1>
+            </div>
+            <div class="featureCard">
+                <img src="assets/features/canteen.webp" class="featureCardImage">
+                <h1 class="featureCardHeading">Canteen</h1>
+            </div>
+            <div class="featureCard">
+                <img src="assets/features/library.webp" class="featureCardImage">
+                <h1 class="featureCardHeading">Library</h1>
+            </div>
+            <div class="featureCard">
+                <img src="assets/features/onlineCourses.webp" class="featureCardImage">
+                <h1 class="featureCardHeading">Online Courses</h1>
+            </div>
+            <div class="featureCard">
+                <img src="assets/features/research.webp" class="featureCardImage">
+                <h1 class="featureCardHeading">Research</h1>
+            </div>
+            <div class="featureCard">
+                <img src="assets/features/labs.webp" class="featureCardImage">
+                <h1 class="featureCardHeading">Labs</h1>
+            </div>
+            <div class="featureCard">
+                <img src="assets/features/festives.webp" class="featureCardImage">
+                <h1 class="featureCardHeading">Festives</h1>
+            </div>
+            <div class="featureCard">
+                <img src="assets/features/placements.webp" class="featureCardImage">
+                <h1 class="featureCardHeading">Placements</h1>
+            </div>
+>>>>>>> main
+
         </div>
 
+<<<<<<< HEAD
         <button class="slideRight fas fa-angle-right" onclick="slideLeft()"></button>
     </section>
 
 
 
     <!---------------second page-------------->
+=======
+        <button class="featureLeftBtn" onclick="slideRight()">&lt;</button>
+        <button class="featureRightBtn" onclick="slideLeft()">&gt;</button>
+
+    </section>
+
+
+    <!-- ----------------VISION AND MISSION----------------->
+>>>>>>> main
     <section class="second-page">
+        <img src="assets/visionMission/visionMission.webp">
         <h1 class="title2">Vision & Mission</h1>
+<<<<<<< HEAD
         <center>
             <fieldset>
                 <legend style="margin-left: 27px;">Vision</legend>
@@ -90,13 +203,39 @@
                 <legend style="text-align: right; margin-right: 27px;">Mission</legend>
                 <div class="vision">
                     <p>The mission of the college is focused on the overall development of the individuals who can serve their organizations, their society and humanity at large with dedication. The college is, through its academic programmes, determined to provide an environment where the students can flexibly develop their personality and bring out the perfection bestowed upon them by nature. The college ensures that each student acquires in-depth knowledge in his chosen discipline and is transformed into a useful citizen of the world.</p>
+=======
 
-                </div>
-                
-            </fieldset>
-        </center>
+        <fieldset class="visionField">
+            <legend class="legend leftLegend" style="margin-left: 2rem;">Vision</legend>
+
+            <p class="vision">The motto of the college is meritum ethicus i.e. merit with ethics. Social, regional,
+                territorial, geographical, racial and cultural boundaries no longer hold relevance in the
+                present scenario. Merit in human beings without ethics turn him into a wild beast. Merit and
+                ethics are the two pillars upon which the foundation of the academic programmes of the College
+                rests.The college is committed to instill in the students a deep sense of ethics, which having
+                amalgamated with their inner talents transforming them into ideal, dedicated, sincere and
+                responsible citizens of the world.
+            </p>
+
+
+        </fieldset>
+
+
+        <fieldset class="visionField">
+            <legend class="legend rightLegend" style="margin-right: 2rem;">Mission</legend>
+            <p class="vision">The mission of the college is focused on the overall development of the individuals who
+                can serve
+                their organizations, their society and humanity at large with dedication. The college is,
+                through its academic programmes, determined to provide an environment where the students can
+                flexibly develop their personality and bring out the perfection bestowed upon them by nature.
+                The college ensures that each student acquires in-depth knowledge in his chosen discipline and
+                is transformed into a useful citizen of the world.</p>
+        </fieldset>
+>>>>>>> main
+
     </section>
 
+<<<<<<< HEAD
     <!-- ? ------------------------------------------------------------------------- -->
     <section class="third-page">
         <h1 class="title2">Salient features</h1> <br><br><br>
@@ -147,9 +286,97 @@
         
     </section>
     <br><br><br><br><br>
+=======
 
-    <!-- ? --------------------------  Departments  ------------------------------ -->
+    <!-- ----------------COURSES----------------->
+    <section class="course">
+        <h1 class="courseHeading">Explore Our Courses</h1>
 
+        <div class="courseGrid">
+            <div class="courseCard">
+                <img src="assets/course/BCA.webp">
+                <h1 class="courseCardName">BCA</h1>
+                <button class="courseCardBtn">View</button>
+            </div>
+            <div class="courseCard">
+                <img src="assets/course/BBA.webp">
+                <h1 class="courseCardName">BBA</h1>
+                <button class="courseCardBtn">View</button>
+            </div>
+            <div class="courseCard">
+                <img src="assets/course/BVoc.webp">
+                <h1 class="courseCardName">BVoc</h1>
+                <button class="courseCardBtn">View</button>
+            </div>
+            <div class="courseCard">
+                <img src="assets/course/Bcomm.webp">
+                <h1 class="courseCardName">Bcom</h1>
+                <button class="courseCardBtn">View</button>
+            </div>
+            <div class="courseCard">
+                <img src="assets/course/BSc.webp">
+                <h1 class="courseCardName">BSc</h1>
+                <button class="courseCardBtn">View</button>
+            </div>
+            <div class="courseCard">
+                <img src="assets/course/ADCA.webp">
+                <h1 class="courseCardName">ADCA</h1>
+                <button class="courseCardBtn">View</button>
+            </div>
+            <div class="courseCard">
+                <img src="assets/course/ADDA.webp">
+                <h1 class="courseCardName">ADDA</h1>
+                <button class="courseCardBtn">View</button>
+            </div>
+            <div class="courseCard">
+                <img src="assets/course/AI-ML.webp">
+                <h1 class="courseCardName">AI-ML</h1>
+                <button class="courseCardBtn">View</button>
+            </div>
+        </div>
+    </section>
+>>>>>>> main
+
+    <footer>
+        <div class="footer">
+            <div class="foot">
+                <h1>Quick Links</h1>
+                <ul style="list-style-type: none">
+                    <li>Result</li>
+                    <li>Academic Calender</li>
+                    <li>Tender Notice</li>
+                    <li>Right To Information</li>
+                    <li>Press Release</li>
+                    <li><a href="complaint.html" target="_blank">Complaint</a></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h1>External Links</h1>
+                <ul style="list-style-type: none">
+                    <li>UGC</li>
+                    <li>NAAC</li>
+                    <li>Lucknow University</li>
+                    <li>IGNOU</li>
+                    <li>State Scholarship</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h1>About</h1>
+                <ul style="list-style-type: none">
+                    <li>About Us</li>
+                    <li>Contact</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Condition</li>
+                    <li>Accessibility</li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="endoftheline">Made With <span style="color: red;"> &heartsuit;  </span> By 
+            <a href="https://github.com/Priyanshu-Batham" target="_blank">@Priyanshu </a> &
+            <a href="https://github.com/nawabSRJ" target="_blank">@Srajan</a></h1>
+    </footer>
+
+<<<<<<< HEAD
     <section class="dept-page">
         <h1 class="title2">Explore Our Departments</h1>
         
@@ -197,6 +424,8 @@
     <br><br><br><br>
 
     <!-- ? ------------------------------------------------------------------------- -->
+=======
+>>>>>>> main
 </body>
 
 </html>

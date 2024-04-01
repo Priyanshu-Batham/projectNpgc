@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/complaint.css">
+    <link rel="stylesheet" href="css/firstPage.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/x-icon" href = "./assets/Complaint/icon.jpg">
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "C3vSErFqZeQK8dYBW",
+        });
+    })();
+    </script>
+
+    <script src="./javascript/complaint.js"></script>
+
+    <title>CSS Form Tutorial</title>
+</head>
+
+<body>
+     <!-- ----------------NAVBAR----------------->
+     <div class="navbar">
+        <div class="leftNavBar"></div>
+        <button class="navOpenBtn" onclick="openNav()">O</button>
+
+        <div class="rightNavBar">
+            <button class="navCloseBtn" onclick="closeNav()">X</button>
+            <ul class="navlinks">
+                <li><a href="index.html">HOME</a></li>
+                <li>ABOUT</li>
+                <li>ACADEMICS</li>
+                <li>ADMISSION</li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <button class="rightNavBarBtn">Login</button>
+            <button class="rightNavBarBtn">Register</button>
+
+        </div>
+    </div>
+
+
+    <!--------------------Header----------------->
+    <header class="contactUsHeader">
+        <h1 class="contactUsHeading">E-Complaint Box</h1>
+        <button class="homeBtn" style="font-size: large;">Help us make NPGC better &hearts;</button>
+      
+    </header>
+
+    <!---------------Contact US Banner-------------->
+    <img src="assets/firstPage/2.webp" class="contactUsBanner">
+    
+    <br><br>
+    
+    <div>
+        <form onsubmit ="sendMail()">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" placeholder="Your Name..." required>
+            <br>
+
+            <label for="batch">Department :</label><br>
+            <select name="batch" id="batch" size="1">
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Com">B.Com</option>
+                <option value="BJMC">BJMC</option>
+            </select>
+            <br>
+            <label for="subject">Subject : </label><br>
+            <input type="text" name="subject" id="subject" required>
+            <br>
+            <label for="message">Write your Complaint : </label>
+            <textarea name="message" id="message" cols="100" rows="12" required></textarea>
+            <input type="submit" value="Submit" onclick="sendMail()">
+            
+        </form>
+    </div>
+    
+</body>
+</html>
