@@ -66,4 +66,3 @@ function slideRight() {
 //automating
 setInterval(slideLeft, 3000)
 
-
